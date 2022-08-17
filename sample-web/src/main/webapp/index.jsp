@@ -14,6 +14,8 @@
         <a href="#home" class="w3-bar-item w3-button"><b>BR-new</b> Architects</a>
         <!-- Float links to the right. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
+            
+            <a href="./comingsoon.html" class="w3-bar-item w3-button">Coming soon</a>
             <a href="#projects" class="w3-bar-item w3-button">Projects</a>
             <a href="#about" class="w3-bar-item w3-button">About</a>
             <a href="#contact" class="w3-bar-item w3-button">Contact</a>

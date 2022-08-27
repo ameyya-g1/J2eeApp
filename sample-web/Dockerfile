@@ -1,4 +1,4 @@
-FROM  tomcat:9.0
+FROM  tomcat:8.0-alpine
 
 LABEL author="ameya"
 LABEL email="ameyya.g1@gmail.com"

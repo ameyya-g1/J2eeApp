@@ -1,11 +1,12 @@
-FROM oraclelinux:8.5
+FROM  tomcat:8.0-alpine
 
 LABEL author="ameya"
 LABEL email="ameyya.g1@gmail.com"
 
 RUN yum -y install git
 RUN yum -y install maven
-RUN yum -y install tomcat
+#RUN yum -y install java
+#RUN yum -y install tomcat
 
 RUN mkdir /home/sample-web
 RUN mkdir /home/sample-web/git_code

@@ -14,6 +14,7 @@ RUN mkdir /home/sample-web/git_code
 
 WORKDIR /home/sample-web/git_code
 
+RUN rm -rf J2eeApp
 RUN git clone https://github.com/ameyya-g1/J2eeApp.git/
 
 WORKDIR /home/sample-web/git_code/J2eeApp/sample-web

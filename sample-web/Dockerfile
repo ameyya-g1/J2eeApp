@@ -3,8 +3,9 @@ FROM  tomcat:9.0
 LABEL author="ameya"
 LABEL email="ameyya.g1@gmail.com"
 
-RUN yum -y install git
-RUN yum -y install maven
+RUN apk update
+RUN apk add git
+RUN apk add maven
 #RUN yum -y install java
 #RUN yum -y install tomcat
 

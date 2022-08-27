@@ -16,15 +16,14 @@ WORKDIR /home/sample-web/git_code
 
 RUN git clone https://github.com/ameyya-g1/J2eeApp.git/
 
-WORKDIR /home/sample-web/git_code/sample-web
+WORKDIR /home/sample-web/git_code/J2eeApp/sample-web
 
 RUN git checkout master
 
 RUN mvn clean install
 
-RUN cp /home/sample-web/git_code/sample-web/target/sample-web.war /usr/share/tomcat/webapps/
+RUN cp /home/sample-web/git_code/J2eeApp/sample-web/target/sample-web.war  /usr/local/tomcat/webapps/
 RUN rm -rf /usr/share/tomcat/webapps/sample-web
 
-RUN systemctl start tomcat
-
-CMD ["tail", "-f", "/dev/null"]
+EXPOSE 8080
+CMD ["catalina.sh", "run"]

@@ -1,4 +1,4 @@
-FROM  tomcat:8.0-alpine
+FROM  tomcat:9.0
 
 LABEL author="ameya"
 LABEL email="ameyya.g1@gmail.com"
@@ -16,9 +16,9 @@ WORKDIR /home/sample-web/git_code
 
 RUN git clone https://github.com/ameyya-g1/J2eeApp.git/
 
-RUN git checkout master
-
 WORKDIR /home/sample-web/git_code/sample-web
+
+RUN git checkout master
 
 RUN mvn clean install
 
